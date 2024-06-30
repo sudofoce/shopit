@@ -90,7 +90,9 @@ const MyOrders = () => {
   return (
     <div>
       <MetaData title={"My Orders"} />
+
       <h1 className="my-5">{data?.orders?.length} Orders</h1>
+
       <MDBDataTable
         data={setOrders()}
         className="px-3"

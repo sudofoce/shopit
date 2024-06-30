@@ -67,6 +67,7 @@ const PaymentMethod = () => {
 
       createNewOrder(orderData);
     }
+
     if (method === "Card") {
       // Stripe Checkout
       const orderData = {
@@ -86,6 +87,7 @@ const PaymentMethod = () => {
     <>
       <MetaData title={"Payment Method"} />
       <CheckoutSteps shipping confirmOrder payment />
+
       <div className="row wrapper">
         <div className="col-10 col-lg-5">
           <form className="shadow rounded bg-body" onSubmit={submitHandler}>
